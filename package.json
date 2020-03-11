@@ -1,0 +1,29 @@
+{
+  "name": "test-owt",
+  "version": "1.0.0",
+  "description": "Test frontend OWT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarryPro/Test-OWT.git"
+  },
+  "author": "Dany Restrepo (dannyfr.03@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WarryPro/Test-OWT/issues"
+  },
+  "homepage": "https://github.com/WarryPro/Test-OWT#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "pug": "^2.0.4"
+  }
+}
