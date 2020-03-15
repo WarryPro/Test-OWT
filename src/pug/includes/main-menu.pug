@@ -1,0 +1,5 @@
+nav.main-menu(itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation")#main-menu
+  ul.nav.justify-content-end
+    each section in sections
+      li.main-menu__item.nav-item(itemprop="url")
+          a.main-menu__link.nav-link(href=section.url itemprop="name")= section.title
