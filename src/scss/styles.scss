@@ -1,1 +1,25 @@
-@import "bootstrap/scss/bootstrap"
+/*
+  This boilerplate is based in ITCSS and SMACSS
+*/
+
+// externas libraries 
+@import "bootstrap/scss/bootstrap";
+
+// Config
+@import "config/variables";
+
+// Base and elements (generic)
+@import "base/base";
+
+// LAYOUT
+@import "layout/layout";
+
+// Components
+  // buttons, tables, menus, etc.
+
+
+// Theme (colors and fonts)
+// @import "theme/typography";
+
+
+// Utilities (hacks)

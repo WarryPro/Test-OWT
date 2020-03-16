@@ -1,0 +1,16 @@
+block config
+  include variables
+doctype html
+html(lang="en")
+  head
+    title siteName
+    meta(charset="utf-8")
+    meta(name="description", content=`${pageDescription}`)
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap")
+    link(rel="stylesheet" href="assets/css/styles.css")
+    
+  body
+    block main
+
+    script(src="assets/js/scripts-min.js")
