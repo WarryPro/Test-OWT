@@ -16,6 +16,9 @@
 
 // Components
   // buttons, tables, menus, etc.
+  @import "components/menu";
+  @import "components/banner";
+  @import "components/forms";
 
 
 // Theme (colors and fonts)
@@ -23,3 +26,4 @@
 
 
 // Utilities (hacks)
+@import "hacks/hacks";

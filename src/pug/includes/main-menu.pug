@@ -1,5 +1,12 @@
-nav.main-menu(itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation")#main-menu
-  ul.nav.justify-content-end
-    each section in sections
-      li.main-menu__item.nav-item(itemprop="url")
-          a.main-menu__link.nav-link(href=section.url itemprop="name")= section.title
+nav.main-menu.container(itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation")#main-menu
+  a.logo.nav-link.navbar-brand(href='/' itemprop="name")
+    img(src="assets/img/logo.svg", alt="Logo Elephant", width="180")
+
+  button.navbar-toggler(type='button', data-toggle="collapse", data-target="#navbarNav", aria-controls="#navbarNav" aria-expanded="false", aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+
+  .collapse.navbar-collapse.justify-content-end#navbarNav
+    ul.nav.navbar-nav
+      each section in sections
+        li.main-menu__item.nav-item(itemprop="url")
+            a.main-menu__link.nav-link(href=section.url itemprop="name")= section.title

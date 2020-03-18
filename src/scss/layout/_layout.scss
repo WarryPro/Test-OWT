@@ -1,0 +1,23 @@
+.main-header {
+    height: 100vh;
+    background: url("../img/view-of-elephant-in-water-247431.png") center center/cover no-repeat;
+    position: relative;
+    z-index: 0;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($second-color, .5);
+        z-index: -1;
+    }
+
+    .navbar ~ .container {
+        align-items: center;
+        padding-top: 15vh;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

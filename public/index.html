@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>siteName</title>
+    <title>Elephant</title>
     <meta charset="utf-8">
     <meta name="description" content="Elephant, the biggest community the internet">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
-    <nav class="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-menu">
-      <ul class="nav justify-content-end">
-        <li class="main-menu__item nav-item" itemprop="url"><a class="main-menu__link nav-link" href="/" itemprop="name">Home</a></li>
-        <li class="main-menu__item nav-item" itemprop="url"><a class="main-menu__link nav-link" href="/#testimonies" itemprop="name">Testimonies</a></li>
-        <li class="main-menu__item nav-item" itemprop="url"><a class="main-menu__link nav-link" href="/#gallery" itemprop="name">Gallery</a></li>
-        <li class="main-menu__item nav-item" itemprop="url"><a class="main-menu__link nav-link" href="/#how-it-works" itemprop="name">How it works</a></li>
-        <li class="main-menu__item nav-item" itemprop="url"><a class="main-menu__link nav-link" href="/#contact" itemprop="name">Contact</a></li>
-      </ul>
-    </nav>
+    <header class="main-header">
+      <div class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <nav class="main-menu container" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-menu"><a class="logo nav-link navbar-brand" href="/" itemprop="name"><img src="assets/img/logo.svg" alt="Logo Elephant" width="180"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="nav navbar-nav">
+              <li class="main-menu__item nav-item" itemprop="url"><a class="main-menu__link nav-link" href="/#testimonies" itemprop="name">TESTIMONIES</a></li>
+              <li class="main-menu__item nav-item" itemprop="url"><a class="main-menu__link nav-link" href="/#gallery" itemprop="name">GALLERY</a></li>
+              <li class="main-menu__item nav-item" itemprop="url"><a class="main-menu__link nav-link" href="/#how-it-works" itemprop="name">HOW IT WORKS</a></li>
+              <li class="main-menu__item nav-item" itemprop="url"><a class="main-menu__link nav-link" href="/#contact" itemprop="name">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container d-flex justify-content-between">
+        <div class="slogan">
+          <h1 class="main-title">The biggest <br>Community on <br>The internet</h1>
+        </div>
+        <div class="form-container">
+          <form class="col-lg-6 form form-header" action="#">
+            <div>
+              <h2 class="form__title text-center">JOIN US</h2>
+              <p class="form__subtitle text-center">Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            </div>
+            <div>
+              <div class="form-group">
+                <label class="form__label" for="emailJoinUs">EMAIL</label>
+                <input class="form-control" id="emailJoinUs" type="email">
+              </div>
+              <div class="form-group">
+                <label class="form__label" for="passwordJoinUs">PASSWORD</label>
+                <input class="form-control" id="passwordJoinUs" type="password">
+              </div>
+              <div class="form-group form__actions">   
+                <input class="form__submit" type="submit" value="LOGIN"><a class="form__link" href="#">CREATE AN ACCOUNT</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="assets/js/scripts-min.js"></script>
   </body>
 </html>

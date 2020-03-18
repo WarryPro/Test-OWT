@@ -168,7 +168,7 @@ gulp.task('sitemap', () => {
 
 gulp.task('dev', gulp.parallel(startServer, gulp.series(['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev'])), () => {
 
-  watch('./src/scss/**/**', () => gulp.series('styles-dev'))
+  watch('./src/scss/**/**', () => gulp.series('styles-dev', server.reload))
   watch('./src/js/**/**', () => gulp.series('scripts-dev', server.reload))
   watch('./src/pug/**/**', () => gulp.series('pug-dev', server.reload))
   watch('./src/img/**/**', () => gulp.series('images-dev'))

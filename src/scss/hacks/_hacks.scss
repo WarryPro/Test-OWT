@@ -1,0 +1,16 @@
+// BG-COLORS
+.navbar.bg-dark {
+    background-color: transparent !important;
+
+    @media (max-width: 991px) {
+        background-color: var(--dark) !important;
+    }
+}
+
+// Font-Colors
+.main-menu__link.nav-link {
+    color: #fff !important;
+    &:hover, &:focus {
+        color: rgba(#fff, .75) !important;
+    }
+}
