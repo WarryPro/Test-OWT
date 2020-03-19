@@ -1,5 +1,7 @@
 block config
   include variables
+  include /mixins/user
+  
 doctype html
 html(lang="en")
   head
@@ -9,13 +11,44 @@ html(lang="en")
     meta(name="viewport" content="initial-scale=1.0, width=device-width")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap")
     link(rel="stylesheet" href="assets/css/styles.css")
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
     
   body
     include /includes/header
     block main
 
-    script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery.min.js")
     script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
-    
+    script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+    //- custom scripts
     script(src="assets/js/scripts-min.js")
+
+    //- Smooth scroll
+    script.
+      $(document).ready(function(){
+        // Add scrollspy to <body>
+        $('body').scrollspy({target: ".navbar", offset: 50});   
+
+        // Add smooth scrolling on all links inside the navbar
+        $("#main-menu a").on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          }  // End if
+        });
+      });

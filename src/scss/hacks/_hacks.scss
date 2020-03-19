@@ -14,3 +14,13 @@
         color: rgba(#fff, .75) !important;
     }
 }
+
+
+// CAROUSEL TESTIMONIES
+.user {
+    min-height: 180px !important; // important pour re-écrire la règle de slick carousel
+
+    @include media-breakpoint-down(md) { 
+        min-height: 160px !important;
+    }
+}

@@ -4,7 +4,8 @@
 
 // externas libraries 
 @import "bootstrap/scss/bootstrap";
-
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";
 // Config
 @import "config/variables";
 
@@ -19,6 +20,7 @@
   @import "components/menu";
   @import "components/banner";
   @import "components/forms";
+  @import "components/carousel-testimonies";
 
 
 // Theme (colors and fonts)

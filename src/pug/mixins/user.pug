@@ -1,0 +1,7 @@
+mixin user(avatar, name, comment)
+    .user.d-flex
+        .user__avatar
+            img(src=`/assets/img/users/${avatar}`)
+        .user__data 
+            p.user__comment=comment
+            p.user__name=name

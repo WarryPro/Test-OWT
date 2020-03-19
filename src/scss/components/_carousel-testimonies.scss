@@ -1,0 +1,38 @@
+.carousel-testimonies{
+    display: flex;
+}
+.user {
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 0 5px 15px 0 rgba($second-color, .1);
+
+    &__avatar {
+        padding: 3px;
+        border-radius: 50%;
+        border: 1px solid $primary-color;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &__data {
+        padding-left: 1rem;
+    }
+
+    &__comment {
+        line-height: 1.2;
+        font-size: $fs-small;
+        margin-bottom: .5rem;
+    }
+
+    &__name {
+        font-weight: bold;
+        margin: 0;
+        font-size: $fs-small;
+    }
+}
