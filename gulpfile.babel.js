@@ -73,6 +73,7 @@ gulp.task('styles-build', () => {
       ]
     ))
     .pipe(gulp.dest('./public/assets/css/'))
+    .pipe(gulp.dest('./docs/assets/css/'))
 })
 
 gulp.task('pug-dev', () => (
@@ -92,6 +93,7 @@ gulp.task('pug-build', () => (
       basedir: './src/pug'
     }))
     .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('./docs'))
 ))
 
 gulp.task('scripts-dev', () => (
@@ -138,6 +140,7 @@ gulp.task('scripts-build', () => (
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./public/assets/js'))
+    .pipe(gulp.dest('./docs/assets/js')) // Github static page
 ))
 
 gulp.task('images-build', () => {
@@ -149,6 +152,7 @@ gulp.task('images-build', () => {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest('./public/assets/img'))
+    .pipe(gulp.dest('./docs/assets/img')) // Github static page
 })
 
 gulp.task('images-dev', () => {
