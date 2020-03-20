@@ -4,12 +4,8 @@
     padding: 50px;
     background: white;
     border-radius: 5px;
-    .form__title {
-        font-weight: bold;
-        color: $second-color;
-    }
 
-    @include media-breakpoint-down(sm) { 
+    @include media-breakpoint-down(sm) {
         padding: 25px;
     }
 }
@@ -18,6 +14,7 @@
 .form-group {
     margin-top: 3rem;
     position: relative;
+
     .form__label {
         position: absolute;
         top: 0;
@@ -25,17 +22,20 @@
         margin-bottom: 0;
         transition: all .3s ease;
     }
+
     &:focus-within .form__label {
         top: -.2rem;
         font-size: $fs-x-small;
         color: rgba($second-color, .7);
     }
+
     .form-control {
         border: none;
         border-bottom: 2px solid $second-color;
         border-radius: 0;
         outline: none;
         transition: all .3s ease;
+
         &:focus {
             border-color: transparent transparent rgba($second-color, .7) transparent;
             box-shadow: none;
@@ -43,8 +43,9 @@
     }
 }
 
-.form__actions  {
+.form__actions {
     text-align: center;
+
     .form__submit {
         display: block;
         width: 100%;
@@ -54,17 +55,54 @@
         border-radius: 5px;
         border: none;
         transition: all .3s ease;
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             background-color: rgba($primary-color, .7);
         }
     }
+
     .form__link {
         margin-top: 2rem;
         color: $second-color;
         transition: color .3s ease;
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             color: rgba($second-color, .7);
             text-decoration: none;
         }
+    }
+}
+
+// FORM CONTACT
+.form-contact {
+    width: 500px;
+    .form-group {
+        &:focus-within .form__label {
+            color: rgba(#fff, .7);
+        }
+
+        &:focus-within .form-control {
+            border-bottom: 2px solid $primary-color;
+        }
+    }
+
+    .form__title,
+    .form__label,
+    .form-control {
+        color: #fff;
+    }
+
+    .form-control {
+        background-color: $second-color;
+        border-bottom: 2px solid #fff;
+    }
+
+    .form__submit {
+        width: auto;
+        padding: 1rem 4rem;
+        margin: 0 auto;
+        line-height: 1;
     }
 }

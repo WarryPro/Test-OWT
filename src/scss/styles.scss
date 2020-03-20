@@ -21,10 +21,13 @@
   @import "components/banner";
   @import "components/forms";
   @import "components/carousel-testimonies";
+  @import "components/gallery";
+  @import "components/counter";
+  @import "components/how-it-work";
 
 
 // Theme (colors and fonts)
-// @import "theme/typography";
+@import "theme/typography";
 
 
 // Utilities (hacks)

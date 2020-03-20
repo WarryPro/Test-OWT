@@ -1,4 +1,6 @@
 require("slick-carousel");
+
+// CAROUSEL SLICK 
 $('.carousel-testimonies').slick({
   dots: true,
   infinite: true,
@@ -27,7 +29,7 @@ $('.carousel-testimonies').slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -39,4 +41,3 @@ $('.carousel-testimonies').slick({
     // instead of a settings object
   ]
 });
-

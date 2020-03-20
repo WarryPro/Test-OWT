@@ -1,0 +1,13 @@
+.contact-container.d-flex.justify-content-center
+    form(action="#").col-lg-6.form.form-contact
+        div
+            h2.form__title.text-center CONTACT US
+            div
+            .form-group
+                label.form__label(for="email") EMAIL
+                input.form-control#email(type="email")
+            .form-group
+                label.form__label(for="message") MESSAGE
+                textarea#message(name="", cols="30", rows="3").form-control
+            .form-group.form__actions    
+                input.form__submit(type="submit", value="SEND")

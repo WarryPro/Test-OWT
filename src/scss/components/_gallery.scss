@@ -1,0 +1,62 @@
+.gallery {
+    position: relative;
+    margin-bottom: 30px;
+
+    &__image {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        &:before {
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            transition: all .5s ease;
+            border-radius: 50%;
+        }
+        &:hover:before {
+            content: url("../img/plus.png");
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $primary-color;
+            opacity: .9;
+            border-radius: 0;
+        }
+
+        &:hover ~ .gallery__data {
+            background-image: none;
+        }
+    }
+
+    &__data {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        left: 1rem;
+        z-index: 10;
+        width: calc(100% - 2rem);
+        padding: 1rem 2rem;
+        background-image: linear-gradient(180deg, transparent, $second-color);
+    }
+
+    &__title, &__member-name {
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+
+    &__member-name {
+        font-size: $fs-small;
+    }
+}

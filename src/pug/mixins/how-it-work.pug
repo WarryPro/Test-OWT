@@ -1,0 +1,9 @@
+mixin how-it-work(image, step, title, text)
+    .how-it-work-container
+        .how-it-work.col-md-6
+            .how-it-work__image
+                img(src=`/assets/img/${image}`)
+            .how-it-work__data 
+                h3.how-it-work__step=step
+                h4.how-it-work__title=title
+                p.how-it-work__text=text

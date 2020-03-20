@@ -12898,9 +12898,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 },{"jquery":1}],3:[function(require,module,exports){
-'use strict';
+"use strict";
 
 require("slick-carousel");
+
+// CAROUSEL SLICK 
 $('.carousel-testimonies').slick({
   dots: true,
   infinite: true,
@@ -12927,7 +12929,7 @@ $('.carousel-testimonies').slick({
       arrows: true
     }
   }, {
-    breakpoint: 480,
+    breakpoint: 576,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -12937,33 +12939,6 @@ $('.carousel-testimonies').slick({
     // settings: "unslick"
     // instead of a settings object
   }]
-});
-
-$(document).ready(function () {
-  // Add scrollspy to <body>
-  $('body').scrollspy({ target: ".navbar", offset: 50 });
-
-  // Add smooth scrolling on all links inside the navbar
-  $("#main-menu a").on('click', function (event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function () {
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
 });
 
 },{"slick-carousel":2}]},{},[3]);
